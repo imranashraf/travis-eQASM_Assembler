@@ -135,6 +135,8 @@ class CMakeBuild(build_ext):
 
     build_args = ['--config', cfg]
 
+    print('platform is: ')
+    print(platform.system())
     if platform.system() == "Windows":
       cmake_args += ['-G', 'MinGW Makefiles']
     else:
