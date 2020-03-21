@@ -136,7 +136,7 @@ class CMakeBuild(build_ext):
     build_args = ['--config', cfg]
 
     if platform.system() == "Windows":
-      cmake_args += ['-G', 'NMake Makefiles']
+      cmake_args += ['-G', 'MinGW Makefiles']
     else:
       build_args += ['--', '-j4']
 
